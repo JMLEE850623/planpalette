@@ -6,10 +6,18 @@ AI-rendered interior design concepts — **for free**.
 - **Free image generation** via [Pollinations](https://pollinations.ai) — no key, no billing.
 - **Optional** [Google Gemini](https://ai.google.dev) (free tier) reads your floor
   plan and writes a richer scene description. The app works fine without it.
+- **Walkthrough video** — animate your renders into a pan/zoom video clip, right
+  in the browser (no GPU).
 
 > Note: renders are *style references*, not exact reconstructions of your floor
 > plan — the free image model paints from a text description, so wall/window
 > positions won't match precisely.
+
+## Demo
+
+[![PlanPalette walkthrough](docs/promo-poster.jpg)](https://github.com/JMLEE850623/planpalette/releases/latest/download/planpalette-promo.mp4)
+
+▶ **[Watch the 34-second walkthrough](https://github.com/JMLEE850623/planpalette/releases/latest/download/planpalette-promo.mp4)** (narration + music). Built free with ffmpeg + Piper — see [`scripts/promo/`](scripts/promo/).
 
 ## Quick start
 
