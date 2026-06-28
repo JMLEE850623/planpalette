@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import UploadZone from './components/UploadZone';
 import IdeaCard from './components/IdeaCard';
 import DetailPanel from './components/DetailPanel';
+import WalkthroughPanel from './components/WalkthroughPanel';
 import { useDesignIdeas } from './hooks/useDesignIdeas';
 import { STYLES, VIEWS, COLOR_THEMES } from './data/styles';
 import { buildOklchPalette } from './utils/color';
@@ -152,6 +153,10 @@ export default function App() {
                 ))}
               </div>
             </div>
+          )}
+
+          {!loading && ideas.some(i => i.image) && (
+            <WalkthroughPanel imageUrls={ideas.map(i => i.image).filter(Boolean)} />
           )}
 
           {selectedIdea && (
